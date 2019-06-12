@@ -1,0 +1,1 @@
+This repository is a second day proyect by holberton school about learning shell basics
