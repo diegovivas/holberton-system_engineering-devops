@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Flg -a -n
+ls -l -a -n
