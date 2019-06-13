@@ -1,2 +1,2 @@
 #!/bin/bash
-chown :hoberton hello
+chown :holberton hello
