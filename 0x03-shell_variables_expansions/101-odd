@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -G "^\d*[13579]$"
+paste -sd,"\n" | cut -d "," -f 1
