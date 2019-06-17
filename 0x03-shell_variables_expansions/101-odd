@@ -1,2 +1,2 @@
 #!/bin/bash
-awk 'NR%2'
+grep -G "^\d*[13579]$"
