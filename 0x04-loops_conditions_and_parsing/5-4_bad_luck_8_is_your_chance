@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#print 10 times holberton school and hi in nine position
+x=0
+while ((x < 10))
+do
+if ((x==3))
+then
+echo "bad luck"
+elif ((x==7))
+then
+echo "good luck"
+else
+echo "Holberton School"
+fi
+((x++))
+done
