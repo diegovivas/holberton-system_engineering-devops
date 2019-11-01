@@ -5,7 +5,7 @@ while ((x < 10))
 do
 if ((x==9))
 then
-echo "hi"
+echo "Hi"
 fi
 echo "Holberton School"
 ((x++))
