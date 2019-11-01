@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#print 10 times holberton school and hi in nine position
+x=0
+while ((x < 13))
+do
+y=1
+echo "Hour: $x"
+while ((y < 60))
+do
+echo $y
+((y++))
+done
+((x++))
+done
