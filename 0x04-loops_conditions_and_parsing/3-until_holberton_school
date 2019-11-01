@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#iterate 10 times and print holberton school
 x=0
 until ((x > 9))
 do

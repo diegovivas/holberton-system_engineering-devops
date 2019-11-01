@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#print 10 times holberton school and hi in nine position
 x=0
 while ((x < 10))
 do
