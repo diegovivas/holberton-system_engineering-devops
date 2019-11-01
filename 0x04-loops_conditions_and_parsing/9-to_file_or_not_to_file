@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#file test exist? is a directory? is empty?
 file=holbertonschool
 
 if [ -e $file ]
