@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#iterate 10 times and print holberton school
 for ((i = 0; i < 10; i++))
 do
 echo "Holberton School"
