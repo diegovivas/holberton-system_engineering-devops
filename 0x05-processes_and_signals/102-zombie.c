@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
 /**
  * infinite_while - check the code for Holberton School students.
  *
@@ -27,14 +29,14 @@ int main(void)
 	while (i < 5)
 	{
 		pid = fork();
-		if (pid == 0)
+		if (pid != 0)
 		{
-			pid = getpid();
 			printf("Zombie process created, PID: %d\n", pid);
-			infinite_while();
 		}
+		else
+			exit(1);
 		i++;
 	}
-
+	infinite_while();
 	return (0);
 }
