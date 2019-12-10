@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+#connect to mi server using my private key
 sudo ssh -i ~/.ssh/holberton ubuntu@35.190.174.178
