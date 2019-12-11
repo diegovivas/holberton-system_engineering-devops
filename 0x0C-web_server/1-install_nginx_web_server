@@ -1,0 +1,5 @@
+#!/usr/bin/env  bash
+sudo apt-get update -y
+sudo apt-get -y install nginx
+sudo service nginx start
+echo "Holberton School" | sudo teev ar/www/html/index.nginx-debian.html
