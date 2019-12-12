@@ -6,7 +6,7 @@ echo "Holberton School" | sudo tee /var/www/html/index.nginx-debian.html
 var1="server_name _;\n\t rewrite ^\/redirect_me https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4 permanent;"
 sudo sed -i "s/server_name _;/$var1/" /etc/nginx/sites-enabled/default
 sudo touch /var/www/html/custom_404.html
-sudo echo "Ceci n'est pas une page" > /var/www/html/custom_404.html
+sudo echo -e "Ceci n'est pas une page\n" > /var/www/html/custom_404.html
 var2="permanent;\n\t error_page 404 /custom_404.html;\n\tlocation = /custom_404.html {\n\troot /usr/share/nginx/html;\n\tinternal;\n\t}"
 sudo sed -i "s/permanent;/$var2/" /etc/nginx/sites-enabled/default
 sudo service nginx restart
