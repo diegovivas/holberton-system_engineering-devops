@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# listening onport 80
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
