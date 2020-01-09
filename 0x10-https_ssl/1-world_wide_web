@@ -3,7 +3,7 @@
 # print some info
 if [ "$2" ]
 then
-echo "The subdomain $2" | tr '\n' ' '
+echo -n "The subdomain $2 "
 dig "$2".diegovivas.tech | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print "is a " $4 " record and points to " $5}'
 else
 dig www."$1" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print "The subdomain www is a " $4 " record and points to " $5}'
