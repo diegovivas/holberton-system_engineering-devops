@@ -14,13 +14,13 @@ all_todo = 0
 done = 0
 list_done = []
 for element in list_to_do:
-    if element['userId'] == int(sys.argv[1]):
+    if element.get('userId') == int(sys.argv[1]):
         all_todo += 1
-        if element['completed'] == True:
+        if element.get('completed') is True:
             done += 1
-            list_done.append(element['title'])
+            list_done.append(element.get('title'))
 
-print("Employee {} is done with tasks({}/{}):".format(user['name'],
+print("Employee {} is done with tasks({}/{}):".format(user.get('name'),
                                                       done, all_todo))
 for title in list_done:
     print("\t {}".format(title))
