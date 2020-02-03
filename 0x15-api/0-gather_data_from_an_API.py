@@ -25,4 +25,3 @@ if __name__ == "__main__":
                                                           done, all_todo))
     for title in list_done:
         print("\t {}".format(title))
-
