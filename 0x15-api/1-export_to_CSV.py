@@ -15,7 +15,7 @@ if __name__ == "__main__":
     list_done = []
     for element in list_to_do:
         if element.get('userId') == int(sys.argv[1]):
-            tuple_final = (sys.argv[1], user.get('name'),
+            tuple_final = (sys.argv[1], user.get('username'),
                            element.get('completed'), element.get('title'))
             list_done.append(tuple_final)
 
