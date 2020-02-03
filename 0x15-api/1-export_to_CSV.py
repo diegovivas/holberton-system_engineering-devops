@@ -20,6 +20,6 @@ if __name__ == "__main__":
             list_done.append(tuple_final)
 
     with open(sys.argv[1]+'.csv', 'w') as f:
-            writer = csv.writer(f)
-            for el in list_done:
-                writer.writerow((el[0], el[1], el[2], el[3]))
+        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
+        for el in list_done:
+            writer.writerow((el[0], el[1], el[2], el[3]))
