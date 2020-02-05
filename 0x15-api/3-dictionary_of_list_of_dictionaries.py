@@ -28,7 +28,7 @@ if __name__ == "__main__":
                 dict_list["completed"] = element[2]
                 dict_list["username"] = element[1]
                 list_dict.append(dict_list)
-        dict_final[cont] = list_dict
+        dict_final[str(cont)] = list_dict
         cont += 1
 
     with open('todo_all_employees.json', 'w') as f:
