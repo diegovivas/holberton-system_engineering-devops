@@ -10,12 +10,11 @@ def top_ten(subreddit):
     for a selected subreddit """
     requ = requests.get(
         "https://api.reddit.com/r/{}/hot".format(subreddit),
-        headers={"User-Agent": "cualquiera"})
+        headers={"User-Agent": "cualquiera"},
+        params={'limit': '10'})
 
-    if requ.status_code == 200:
-        for idx, element in enumerate(requ.json().get('data').get('children')):
-            if idx < 10:
-                print(element.get('data').get('title'))
-
+    if len(requ.json().get('data').get('children')):
+        for element in requ.json().get('data').get('children'):
+            print(element.get('data').get('title'))
     else:
-        return None
+        print('None')
